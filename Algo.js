@@ -8,18 +8,15 @@
 // ["James", "Will", "Jack", "Nate", "Edward"] უნდა დააბრუნოს ["Will", "Jack", "Nate"]}
 
 let friendList = ['Ryan', 'Kieran', 'Jason', 'Lazare'];
-let myFriendList = ['Lazare'];
 
-let nameFunc = (allNames, myFriend) => {
+let nameFunc = (allNames) => {
     for (let i = 0; i < allNames.length; i++){
-         if (allNames[i] === myFriend[0]){
-            console.log(allNames[i]);
-         } else if(allNames[i].length === 4){
+         if(allNames[i].length === 4){
              console.log(allNames[i]);
          }
     }
 }
-nameFunc(friendList, myFriendList)
+nameFunc(friendList)
 
 
 //{ამოცანა #2
@@ -33,7 +30,6 @@ nameFunc(friendList, myFriendList)
 // [3, 87, 45, 12, 7] უნდა დააბრუნოს 3 + 7 ის ჯამი (10)}
 
 let numbers = [5, 8, 12, 19, 22];
-let minimums = [];
 
 let numFunc = (array) => {
     let res = array.sort((a, b) => a - b).slice(0, 2);
